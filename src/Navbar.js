@@ -11,7 +11,7 @@ const Navbar = () => {
                     borderRadius: '8px'
                 }}>New blog</a>
 
-                <a href="/create">New blog</a>
+                <a href="/name">Name</a>
             </div>
         </nav>
     );
