@@ -10,18 +10,21 @@ function App() {
   return (
     <Router>
       <div className="App">
+
         <Navbar></Navbar>
+
         <div className="content">
           <Switch>
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route path="/create">
+
+            <Route path="/create" component={Create} >
               {/* made Create components*/}
-              <Create />
+              {/* <Create /> */}
             </Route>
 
-            <Route exact path="/name">
+            <Route path="/name">
               <Name />
             </Route>
           </Switch>
