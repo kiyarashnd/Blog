@@ -4,6 +4,7 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Create from './Create';
 import Name from './Name';
+import BlogDetails from './BlogDetails';
 
 function App() {
 
@@ -42,6 +43,10 @@ function App() {
             <Route path="/name">
               {/* <Name /> */}
               <h1>my name is kiya</h1>
+            </Route>
+
+            <Route exact path="/blogs/:id">
+              <BlogDetails />
             </Route>
           </Switch>
         </div>
