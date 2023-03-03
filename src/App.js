@@ -40,7 +40,8 @@ function App() {
             </Route>
 
             <Route path="/name">
-              <Name />
+              {/* <Name /> */}
+              <h1>my name is kiya</h1>
             </Route>
           </Switch>
         </div>
