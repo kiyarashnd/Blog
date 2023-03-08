@@ -6,7 +6,9 @@ const Create = () => {
     const [author, setAuthor] = useState('mario');
 
     const handleSubmit = (e) => {
+        //for prevent refresh page after submit form
         e.preventDefault();
+        //make a new object
         const blog = { title, body, author }
         console.log(blog)
     }
@@ -17,6 +19,7 @@ const Create = () => {
             <form onSubmit={handleSubmit}>
                 <label>Blog title:</label>
                 <input
+                    placeholder="blog title"
                     type="text"
                     required
                     value={title}
@@ -24,6 +27,7 @@ const Create = () => {
                 />
                 <label>Blog body:</label>
                 <textarea
+                    placeholder="blog body"
                     required
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
