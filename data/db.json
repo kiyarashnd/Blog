@@ -17,6 +17,24 @@
       "body": "about",
       "author": "mario",
       "id": 3
+    },
+    {
+      "title": "myBlog",
+      "body": "about something",
+      "author": "mario",
+      "id": 4
+    },
+    {
+      "title": "myBlog2",
+      "body": "some thing about you",
+      "author": "yoshi",
+      "id": 5
+    },
+    {
+      "title": "mehdi",
+      "body": "ajflksjfj;ajfks",
+      "author": "mario",
+      "id": 6
     }
   ]
 }

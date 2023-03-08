@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('mario');
     const [isPending, setIsPending] = useState(false);
+
+    const myHistory = useHistory();
 
     const handleSubmit = (e) => {
         //for prevent refresh page after submit form
@@ -20,7 +23,12 @@ const Create = () => {
             body: JSON.stringify(blog)
         }).then(() => {
             console.log('new blog added');
-            setIsPending(false)
+            setIsPending(false);
+            //i go back one through history when user add blogs
+            // myHistory.go(-1)
+
+            //when user submit the form the blog is added we then push them to the home page
+            myHistory.push('/')
         })
     }
 
