@@ -27,7 +27,7 @@ const Create = () => {
             //i go back one through history when user add blogs
             // myHistory.go(-1)
 
-            //when user submit the form the blog is added we then push them to the home page
+            //when user submit the form and the blog is added we then push user to the home page
             myHistory.push('/')
         })
     }
@@ -62,9 +62,9 @@ const Create = () => {
                 {!isPending && <button>Add blog</button>}
                 {isPending && <button disabled>Adding blog...</button>}
 
-                <p>{title}</p>
+                {/* <p>{title}</p>
                 <p>{body}</p>
-                <p>{author}</p>
+                <p>{author}</p> */}
             </form>
         </div>
     );
