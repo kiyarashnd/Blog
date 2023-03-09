@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Create from './Create';
 import Name from './Name';
 import BlogDetails from './BlogDetails';
+import NotFound from './NotFound';
 
 function App() {
 
@@ -47,6 +48,10 @@ function App() {
 
             <Route exact path="/blogs/:id">
               <BlogDetails />
+            </Route>
+            {/* lock catch any other route now this goes at the bottom because otherwise it's going to match any route that comes in if it goes at the top if it goes at the bottom if none of top route match then this * will match regardless */}
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </div>
