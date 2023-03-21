@@ -73,7 +73,6 @@ const Create = () => {
                 {/* <p>{title}</p>
                 <p>{body}</p>
                 <p>{author}</p> */}
-                <p>add a p element for push to github</p>
             </form>
         </div>
     );
