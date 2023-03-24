@@ -3,6 +3,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
     const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    console.log('blogs is :',blogs)
     return (
         <div className="home">
             {error && <div>{error}</div>}

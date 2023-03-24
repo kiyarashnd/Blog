@@ -10,8 +10,7 @@
 .navbar {
   padding: 20px;
   display: flex;
-  align-items: center;
-  max-width: 600px;
+  justify-content: space-between;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -24,19 +23,21 @@
   margin-left: auto;
 }
 
+.navbar a[href="/"] {
+  color: white;
+  background-color: rgb(241, 53, 109);
+  border-radius: 8px;
+}
+
 .navbar a {
-  margin-left: 16px;
+  margin-left: 20px;
   text-decoration: none;
   padding: 6px;
 }
 
-.navbar a:hover {
-  color: #f1356d;
-}
-
 .content {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 0px auto;
   padding: 20px;
 }
 
@@ -83,7 +84,7 @@
 
 /* create new blog form */
 .create {
-  max-width: 400px;
+  /* max-width: 400px; */
   margin: 0 auto;
   text-align: center;
 }
@@ -94,7 +95,7 @@
 }
 
 .create h2 {
-  font-size: 20px;
+  font-size: 30px;
   color: #f1356d;
   margin-bottom: 30px;
 }
@@ -110,11 +111,22 @@
   display: block;
 }
 
+.create textarea {
+  height: 85px;
+}
+
+
 .create button {
+  width: 200px;
   background: #f1356d;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  margin-top: 20px;
+}
+
+.create button:hover {
+  transform: scale(1.2);
 }

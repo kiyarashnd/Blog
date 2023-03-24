@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <h1>The dojo blog</h1>
+            <h1>The daily blog</h1>
             <div className="Links">
                 <Link to="/">Home</Link>
 
@@ -12,8 +12,6 @@ const Navbar = () => {
                     backgroundColor: '#f1356d',
                     borderRadius: '8px'
                 }}>New blog</Link>
-
-                <Link to="/name">Name</Link>
             </div>
         </nav>
     );

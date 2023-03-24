@@ -1,9 +1,8 @@
 // import './App.css';
-// import Navbar from './Navbar';
+import Navbar from './Navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Create from './Create';
-// import Name from './Name';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 
@@ -13,9 +12,9 @@ function App() {
     <Router>
       <div className="App">
 
-        {/* <Navbar></Navbar> */}
+        <Navbar></Navbar>
 
-        <nav className="navbar">
+        {/* <nav className="navbar">
           <h1>The dojo blog</h1>
           <div className="Links">
             <Link to="/">Home</Link>
@@ -25,10 +24,8 @@ function App() {
               backgroundColor: '#f1356d',
               borderRadius: '8px'
             }}>New blog</Link>
-
-            <Link to="/name">Name</Link>
           </div>
-        </nav>
+        </nav> */}
 
         <div className="content">
           <Switch>
@@ -37,13 +34,7 @@ function App() {
             </Route>
 
             <Route path="/create" component={Create} >
-              {/* made Create components*/}
               {/* <Create /> */}
-            </Route>
-
-            <Route path="/name">
-              {/* <Name /> */}
-              <h1>my name is kiya</h1>
             </Route>
 
             <Route exact path="/blogs/:id">
