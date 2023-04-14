@@ -12,6 +12,9 @@
   <p>Then, navigate to the project directory and install the necessary dependencies:</p>
   <pre><code>cd your-repo
 npm install</code></pre>
+<p>for built JSON server :</p>
+<pre><code>cd your-repo
+npx json-server --watch data2/db.json --port 8000</code></pre>
   
   <h2>Usage</h2>
   <p>To start the development server, run the following command:</p>
